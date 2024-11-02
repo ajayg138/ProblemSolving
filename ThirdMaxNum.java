@@ -40,6 +40,6 @@ class ThirdMaxNum {
 
         
         int[] nums4 = {1, 1, 1};
-        System.out.println("Third maximum of [1, 1, 1]: " + solution.thirdMax(nums4)); // Expected output: 1
+        System.out.println("Third maximum of [1, 1, 1]: " + solution.thirdMax(nums4)); 
     }
 }
