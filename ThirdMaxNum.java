@@ -31,7 +31,7 @@ class ThirdMaxNum {
         int[] nums1 = {3, 2, 1};
         System.out.println("Third maximum of [3, 2, 1]: " + solution.thirdMax(nums1)); 1
 
-        // Test Case 2
+        
         int[] nums2 = {1, 2};
         System.out.println("Third maximum of [1, 2]: " + solution.thirdMax(nums2));
         // Test Case 3
