@@ -42,7 +42,6 @@ class StackEx1
             System.out.println("Element is found at position: " + pos);
     }
 
-
     public static void main (String[] args)
     {
         Stack<Integer> stack = new Stack<Integer>();
