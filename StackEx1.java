@@ -25,14 +25,13 @@ class StackEx1
         }
     }
 
-    // Displaying element on the top of the stack
     static void stack_peek(Stack<Integer> stack)
     {
         Integer element = (Integer) stack.peek();
         System.out.println("Element on stack top: " + element);
     }
     
-    // Searching element in the stack
+    
     static void stack_search(Stack<Integer> stack, int element)
     {
         Integer pos = (Integer) stack.search(element);
