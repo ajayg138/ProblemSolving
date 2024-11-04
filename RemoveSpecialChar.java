@@ -15,6 +15,8 @@ public class RemoveSpecialChar{
                 sb.append(ch);
             }
 
+
+            //.....Using InBuiltCharacter Class Method
             // if(Character.isLetterOrDigit(str.charAt(i))){
             //     sb.append(str.charAt(i));
             // }
