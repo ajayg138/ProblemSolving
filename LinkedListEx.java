@@ -1,4 +1,4 @@
-//LinkedList basics
+//LinkedList basic Program
 public class LinkedListEx{
 
 
