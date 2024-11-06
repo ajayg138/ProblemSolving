@@ -5,9 +5,11 @@ public class ArraySort{
     public static void sorting(int[] arr){
         Arrays.sort(arr);
 
-        for(int a:arr){
-            System.out.print(a+" ");
-        }
+        // for(int a:arr){
+        //     System.out.print(a+" ");
+        // }
+
+        System.out.print(Arrays.toString(arr));
     }
 
     public static void main(String[] args){
