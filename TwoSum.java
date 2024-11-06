@@ -26,9 +26,9 @@ public class TwoSum{
         }
 
         for(int i=0;i<n;i++){
-            int complement=target-nums[i];
+            int complement=target-arr[i];
             if(hm.containsKey(complement) && hm.get(complement) != i){
-                return new int[] {map.get(complement,i)};
+                return new int[] {hm.get(complement),i};
             }
         }
 
