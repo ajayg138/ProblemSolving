@@ -1,5 +1,7 @@
 public class TwoSum{
 
+
+//Brute Force Appraoch
     public static int[] twosum(int[] arr,int target){
 
         for(int i=0;i<arr.length;i++){
