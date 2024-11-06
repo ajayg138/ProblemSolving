@@ -4,7 +4,7 @@ import java.util.*;
 public class TwoSum{
 
 
-//Brute Force Appraoch
+//Brute Force Appraoch  O(n^2)
     // public static int[] twosum(int[] arr,int target){
 
     //     for(int i=0;i<arr.length;i++){
@@ -16,6 +16,9 @@ public class TwoSum{
     //     }
     //     return null;
     // }
+
+
+    //Optimal Approach O(n)
 
     public static int[] twosum(int[] arr,int target){
         HashMap<Integer, Integer> hm=new HashMap<>();
