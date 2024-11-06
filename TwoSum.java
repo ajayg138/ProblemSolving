@@ -12,14 +12,17 @@ public class TwoSum{
         return null;
     }
 
-    public class static void main(String[] args){
-        int[] arr={2,7,11,15};
-        int target=9;
+    public static void main(String[] args){
+        // int[] arr={2,7,11,15};
+        int[] arr={3,2,4};
+        int target=6;
         
         int[] result=twosum(arr,target);
 
         if(result != null){
-            Systes
+            System.out.print("[" +result[0] +", "+ result[1]+"]");
+        }else{
+            System.out.print("null");
         }
     }
 }
