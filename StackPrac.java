@@ -11,5 +11,8 @@ public class StackPrac{
         st.push(30);
         st.push(40);
         System.out.print(st);
+
+
+        System.out.print(st.peek()+" "+st.size());
     }
 }
