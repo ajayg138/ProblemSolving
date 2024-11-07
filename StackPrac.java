@@ -13,6 +13,6 @@ public class StackPrac{
         System.out.print(st);
 
 
-        System.out.print(st.peek()+" "+st.size());
+        System.out.println(st.peek()+" "+st.size());
     }
 }
