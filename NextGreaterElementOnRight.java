@@ -1,6 +1,6 @@
 import java.util.*;
 
-
+//Brute force O(n^2)
 public class NextGreaterElementOnRight{
     public static void Next(int[] arr){
         for(int i=0;i<arr.length;i++){
