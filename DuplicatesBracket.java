@@ -2,21 +2,33 @@ import java.util.*;
 
 public class DuplicatesBracket{
 
-    public static boolean CheackDup(String str){
+    public static boolean CheckDup(String str){
+        
+        Stack<Character> st=new Stack<>();
 
         for(int i=0;i<str.length();i++){
             char ch=str.charAt(i);
 
             if(ch==')'){
+                if(st.peek() == '('){
+                    return true;
+                }else{
+                    while(st.peek() != '('){
+                        st.pop();
+                    }
+                    st.pop();
+                }
 
-            }
-        }else{
+            }else{
             st.push(ch);
+            }
         }
+        return false;
     }
     
    public static void main(String[] args){
-    String str="((a+b)+((c+d)))";
+    // String str="((a+b)+((c+d)))";
+    String str="((a+b)+(c+d))";
 
     // Stack<Character> st=new Stack<>();
 
@@ -37,6 +49,9 @@ public class DuplicatesBracket{
     //     }
     // }
     // System.out.print(false);
+
+    boolean res=CheckDup(str);
+    System.out.println(res);
 
 
     }
