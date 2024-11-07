@@ -21,5 +21,7 @@ public class StackPrac{
         st.pop();
         System.out.println(st+"-->"+st.peek()+" "+st.size());
         st.pop();
+        // System.out.println(st+"-->"+st.peek()+" "+st.size());
+        // st.pop();
     }
 }
