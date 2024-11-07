@@ -10,9 +10,16 @@ public class StackPrac{
         st.push(20);
         st.push(30);
         st.push(40);
-        System.out.print(st);
+        System.out.println(st);
 
 
-        System.out.println(st.peek()+" "+st.size());
+        System.out.println(st+"-->"+st.peek()+" "+st.size());
+        st.pop();
+        System.out.println(st+"-->"+st.peek()+" "+st.size());
+        st.pop();
+        System.out.println(st+"-->"+st.peek()+" "+st.size());
+        st.pop();
+        System.out.println(st+"-->"+st.peek()+" "+st.size());
+        st.pop();
     }
 }
