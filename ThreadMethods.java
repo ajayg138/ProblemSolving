@@ -11,5 +11,7 @@ public class ThreadMethods{
         System.out.println(Thread.currentThread().getName());
         Thread.currentThread().setName("Ajay");
         System.out.println(Thread.currentThread().getName());
+        System.out.println(10/0);
+
     }
 }
