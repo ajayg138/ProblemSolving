@@ -3,7 +3,7 @@ import java.lang.*;
 public class ThreadEx extends Thread{
 
     public void run(){
-
+        System.out.print("Thread");
     }
 
 
