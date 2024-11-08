@@ -32,6 +32,12 @@ public class PalindromeNumber{
         System.out.println("Enter n: ");
         int n=sc.nextInt();
 
+        boolean res=checkPalindrom(n);
+        if(res==true){
+            System.out.print("Palindrome...");
+        }else{
+            System.out.print("Not a Palindrome...");
+        }
 
     }
 }
