@@ -13,9 +13,11 @@ public class ThreadMethods extends Thread{
         System.out.println("Hello: "+Thread.currentThread().getName());
 
         ThreadMethods t=new ThreadMethods();
+        t.setName("Raju");
         t.start();
         
         ThreadMethods t1=new ThreadMethods();
+        t1.setName("Aju");
         t1.start();
 
 
