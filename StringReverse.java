@@ -15,18 +15,26 @@ public class StringReverse{
 
 
 //Second Way...
+    // public static String reverse(String str){
+    //     char[] charArray=str.toCharArray();
+    //     int first=0;
+    //     int last=str.length()-1;
+    //     while(first<last){
+    //         char firstChar=charArray[first];
+    //         charArray[first]=charArray[last];
+    //         charArray[last]=firstChar;
+    //         first++;
+    //         last--;
+    //     }
+    //     return new String(charArray);
+    // }
+
+    //third way...
     public static String reverse(String str){
-        char[] charArray=str.toCharArray();
-        int first=0;
-        int last=str.length()-1;
-        while(first<last){
-            char firstChar=charArray[first];
-            charArray[first]=charArray[last];
-            charArray[last]=firstChar;
-            first++;
-            last--;
-        }
-        return new String(charArray);
+        StringBuilder sb=new StringBuilder(str);
+        sb.reverse();
+
+        return sb.toString();
     }
 
     public static void main(String[] args){
