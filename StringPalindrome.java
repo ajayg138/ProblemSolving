@@ -2,16 +2,22 @@ import java.util.*;
 
 public class StringPalindrome{
 
+    // public static boolean checkPalindrome(String str){
+    //     //First way
+    //     int last=str.length()-1;
+    //     String rev="";
+    //     String dup=str;
+    //     for(int i=last;i>=0;i--){
+    //         rev=rev+str.charAt(i);
+    //     }
+    //     return rev.equals(dup);
+    // }
+
     public static boolean checkPalindrome(String str){
-        //First way
-        int last=str.length()-1;
-        String rev="";
-        String dup=str;
-        for(int i=last;i>=0;i--){
-            rev=rev+str.charAt(i);
-        }
-        return rev.equals(dup);
+        int 
     }
+
+
 
 
 
