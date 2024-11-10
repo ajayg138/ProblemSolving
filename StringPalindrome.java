@@ -13,9 +13,13 @@ public class StringPalindrome{
     //     return rev.equals(dup);
     // }
 
-    public static boolean checkPalindrome(String str){
+    public static void checkPalindrome(String str){
         int first=0;
         int last=str.length()-1;
+
+        while(first<last){
+
+        }
     }
 
 
