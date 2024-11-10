@@ -16,7 +16,13 @@ public class ReverseNumber{
 
 //secondway..
 
-public static 
+public static int reverse(int num){
+    String str=Integer.toString(num);
+    StringBuilder sb=new StringBuilder(str);
+    sb.reverse();
+
+    return Integer.parseInt(sb.toString());
+}
 
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
