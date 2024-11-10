@@ -1,15 +1,28 @@
 import java.util.*;
 
 public class StringReverse{
+    // //FirstWay...
+    // public static String reverse(String str){
+    //     int last=str.length()-1;
+    //     String rev="";
+    //     for(int i=last;i>=0;i--){
+    //         rev=rev+str.charAt(i);
+    //     }
+
+    //     return rev;
+    // }
+
 
     public static String reverse(String str){
+        int first=0;
         int last=str.length()-1;
-        String rev="";
-        for(int i=last;i>=0;i--){
-            rev=rev+str.charAt(i);
+        while(first<last){
+            Char firstChar=charAt(first);
+            charAt(first)=charAt(last);
+            charAt(last)=firstChar;
+            first++;
+            last--;
         }
-
-        return rev;
     }
 
     public static void main(String[] args){
