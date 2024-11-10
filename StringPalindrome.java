@@ -15,6 +15,7 @@ public class StringPalindrome{
 
     public static boolean checkPalindrome(String str){
         int first=0;
+        int last=str.length()-1;
     }
 
 
