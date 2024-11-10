@@ -30,7 +30,7 @@ public class StringPalindrome{
     //     return true;
     // }
 
-
+    //Third Way
     public static void checkPalindrome(String str){
         StringBuilder sb=new StringBuilder(str);
         sb.reverse();
