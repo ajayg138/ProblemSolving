@@ -14,7 +14,7 @@ public class StringPalindrome{
     // }
 
     public static boolean checkPalindrome(String str){
-        int 
+        int first=0;
     }
 
 
