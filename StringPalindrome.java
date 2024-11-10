@@ -23,6 +23,8 @@ public class StringPalindrome{
             }else{
                 System.out.print("Not a Palindrome..");
             }
+            first++;
+            last--;
         }
     }
 
