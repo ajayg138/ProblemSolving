@@ -10,7 +10,7 @@ public class StringPalindrome{
         for(int i=last;i>=0;i--){
             rev=rev+str.charAt(i);
         }
-        return rev==dup;
+        return rev.equals(dup);
     }
 
 
