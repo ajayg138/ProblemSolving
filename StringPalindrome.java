@@ -31,6 +31,15 @@ public class StringPalindrome{
     // }
 
 
+    public static void checkPalindrome(String str){
+        StringBuilder sb=new StringBuilder(str);
+        sb.reverse();
+        if(sb.equals(str)){
+            System.out.print("Palindrome..");
+        }else{
+            System.out.print("Not Palindrome..");
+        }
+    }
 
 
 
@@ -40,12 +49,12 @@ public class StringPalindrome{
         String str=sc.nextLine();
 
         boolean res=checkPalindrome(str);
-        if(res==true){
-            System.out.println("Palindrome...");
-        }else{
-            System.out.println("Not a Palindrome...");
-        }
+        // if(res==true){
+        //     System.out.println("Palindrome...");
+        // }else{
+        //     System.out.println("Not a Palindrome...");
+        // }
 
-            // checkPalindrome(str);
+            checkPalindrome(str);
     }
 }
