@@ -13,19 +13,19 @@ public class StringPalindrome{
     //     return rev.equals(dup);
     // }
 
-    public static void checkPalindrome(String str){
+    public static boolean checkPalindrome(String str){
         int first=0;
         int last=str.length()-1;
 
         while(first<last){
-            if(str.charAt(first)==str.charAt(last)){
-                System.out.print("Palindrome..");
-            }else{
-                System.out.print("Not a Palindrome..");
+            if(str.charAt(first)!=str.charAt(last)){
+                return false;
             }
             first++;
             last--;
         }
+
+        return true;
     }
 
 
@@ -37,13 +37,13 @@ public class StringPalindrome{
         System.out.println("Enter String: ");
         String str=sc.nextLine();
 
-        // boolean res=checkPalindrome(str);
-        // if(res==true){
-        //     System.out.println("Palindrome...");
-        // }else{
-        //     System.out.println("Not a Palindrome...");
-        // }
+        boolean res=checkPalindrome(str);
+        if(res==true){
+            System.out.println("Palindrome...");
+        }else{
+            System.out.println("Not a Palindrome...");
+        }
 
-            checkPalindrome(str);
+            // checkPalindrome(str);
     }
 }
