@@ -5,6 +5,7 @@ public class ThreadEx1 extends Thread{
     public void run(){
         System.out.println("Single Thread");
     }
+    
 
     public static void main(String[] args){
         ThreadEx1 t=new ThreadEx1();
