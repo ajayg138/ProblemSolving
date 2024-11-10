@@ -13,23 +13,29 @@ public class StringReverse{
     // }
 
 
+
+//Second Way...
     public static String reverse(String str){
+        char[] charArray=str.toCharArray();
         int first=0;
         int last=str.length()-1;
         while(first<last){
-            Char firstChar=charAt(first);
-            charAt(first)=charAt(last);
-            charAt(last)=firstChar;
+            char firstChar=charArray[first];
+            charArray[first]=charArray[last];
+            charArray[last]=firstChar;
             first++;
             last--;
         }
+        return new String(charArray);
     }
 
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter String: ");
         String str=sc.nextLine();
-        System.out.println(reverse(str));
+
+        String res=reverse(str);
+        System.out.println(res);
         
     }
 }
