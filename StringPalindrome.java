@@ -13,20 +13,22 @@ public class StringPalindrome{
     //     return rev.equals(dup);
     // }
 
-    public static boolean checkPalindrome(String str){
-        int first=0;
-        int last=str.length()-1;
 
-        while(first<last){
-            if(str.charAt(first)!=str.charAt(last)){
-                return false;
-            }
-            first++;
-            last--;
-        }
+    //Second Way...
+    // public static boolean checkPalindrome(String str){
+    //     int first=0;
+    //     int last=str.length()-1;
 
-        return true;
-    }
+    //     while(first<last){
+    //         if(str.charAt(first)!=str.charAt(last)){
+    //             return false;
+    //         }
+    //         first++;
+    //         last--;
+    //     }
+
+    //     return true;
+    // }
 
 
 
