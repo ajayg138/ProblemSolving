@@ -1,19 +1,20 @@
 public class MaxSubArrray{
 
-    public static int maxSubarr(int[] arr){
-        int maxSum=Integer.MIN_VALUE;
+    // //Brute Force Approach...
+    // public static int maxSubarr(int[] arr){
+    //     int maxSum=Integer.MIN_VALUE;
 
-        for(int i=0;i<arr.length;i++){
-            int currentSum=0;
+    //     for(int i=0;i<arr.length;i++){
+    //         int currentSum=0;
 
-            for(int j=i;j<arr.length;j++){
-                currentSum += arr[j];
-                maxSum = Integer.max(maxSum,currentSum);
-            }
-        }
+    //         for(int j=i;j<arr.length;j++){
+    //             currentSum += arr[j];
+    //             maxSum = Integer.max(maxSum,currentSum);
+    //         }
+    //     }
 
-        return maxSum;
-    }
+    //     return maxSum;
+    // }
 
 
     public static void main(String[] args){
