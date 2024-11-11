@@ -17,7 +17,7 @@ class AvgMaxSubArray {
             maxSum = Math.max(maxSum, currentSum);
         }
         
-        // Return the maximum average
+        
         return (double) maxSum / k;
     }
 
