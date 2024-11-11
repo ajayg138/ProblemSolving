@@ -17,7 +17,7 @@ public class MaxSubArrray{
     // }
 
 
-//optimal solution using kadane's algorithm
+//optimal solution using kadane's algorithm...
 
 public static int maxSubarr(int[] arr){
     int maxSum=arr[0];
