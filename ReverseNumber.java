@@ -14,7 +14,7 @@ public class ReverseNumber{
     //     return rev;
     // }
 
-//secondway..
+//secondway...
 
 public static int reverse(int num){
     String str=Integer.toString(num);
