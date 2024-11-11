@@ -6,7 +6,7 @@ class AvgMaxSubArray {
             maxSum += nums[i];
         }
         
-        // Initialize the current sum as the max sum for the first window
+        
         int currentSum = maxSum;
         
         // Slide the window across the array
