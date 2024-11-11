@@ -9,7 +9,7 @@ class AvgMaxSubArray {
         
         int currentSum = maxSum;
         
-        // Slide the window across the array
+        
         for (int i = k; i < nums.length; i++) {
             // Update the current sum by sliding the window
             currentSum += nums[i] - nums[i - k];
