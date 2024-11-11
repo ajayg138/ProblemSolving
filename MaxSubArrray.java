@@ -1,7 +1,7 @@
 public class MaxSubArrray{
 
     public static int maxSubarr(int[] arr){
-        int maxSum=Integer.MAX_VALUE;
+        int maxSum=Integer.MIN_VALUE;
 
         for(int i=0;i<arr.length;i++){
             int currentSum=0;
