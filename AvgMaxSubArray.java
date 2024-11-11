@@ -36,7 +36,7 @@ class AvgMaxSubArray {
         double result2 = solution.findMaxAverage(nums2, k2);
         System.out.println("The maximum average for Test Case 2 is: " + result2);
         
-        // Test Case 3
+        
         int[] nums3 = {-1, -2, -3, -4, -5};
         int k3 = 1;
         double result3 = solution.findMaxAverage(nums3, k3);
