@@ -19,8 +19,8 @@ public class MaxSubArrray{
 
 //optimal solution using kadane's algorithm
 
-public static in maxSubarr(int[] arr){
-    int maxSum=arr[o];
+public static int maxSubarr(int[] arr){
+    int maxSum=arr[0];
     int currentSum=arr[0];
 
     for(int i=1;i<arr.length;i++){
