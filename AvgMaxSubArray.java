@@ -24,7 +24,7 @@ class AvgMaxSubArray {
     public static void main(String[] args) {
         AvgMaxSubArray solution = new AvgMaxSubArray();
         
-        // Test Case 1
+       
         int[] nums1 = {1, 12, -5, -6, 50, 3};
         int k1 = 4;
         double result1 = solution.findMaxAverage(nums1, k1);
