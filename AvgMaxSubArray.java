@@ -13,7 +13,7 @@ class AvgMaxSubArray {
         for (int i = k; i < nums.length; i++) {
             
             currentSum += nums[i] - nums[i - k];
-            // Track the maximum sum encountered
+           
             maxSum = Math.max(maxSum, currentSum);
         }
         
