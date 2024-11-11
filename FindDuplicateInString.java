@@ -2,6 +2,8 @@ import java.util.*;
 
 public class FindDuplicateInString{
 
+
+//Brute Force Approach...
 public static void findDuplicateCharacters(String str) {
     List<Character> countedChars = new ArrayList<>();
 
