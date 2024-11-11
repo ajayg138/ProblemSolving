@@ -11,7 +11,7 @@ class AvgMaxSubArray {
         
         
         for (int i = k; i < nums.length; i++) {
-            // Update the current sum by sliding the window
+            
             currentSum += nums[i] - nums[i - k];
             // Track the maximum sum encountered
             maxSum = Math.max(maxSum, currentSum);
