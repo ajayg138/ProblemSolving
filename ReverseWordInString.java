@@ -3,7 +3,7 @@ import java.util.*;
 public class ReverseWordInString{
 
     public static String reverseWords(String str){
-        String[] strArray=str.split(" ");
+        String[] strArray=str.trim().split(" ");
 
         StringBuilder sb=new StringBuilder();
         for(int i=strArray.length-1;i>=0;i--){
@@ -19,7 +19,7 @@ public class ReverseWordInString{
 
 
     public static void main(String[] args){
-        String str="Ajay Ramchandra Gole";
+        String str=" Ajay Ramchandra    Gole     ";
         String res=reverseWords(str);
         System.out.println(res);
 
