@@ -6,7 +6,7 @@ public class ReverseWordInString{
         char[] strArray=str.toCharArray().spilt(" ");
 
         int lastChar=strArray.length-1;
-        StingBuilder sb=new StringBuilder();
+        StringBuilder sb=new StringBuilder();
         for(int i=lastChar;i>=0;i--){
             sb.append(strArray[i]);
             if(i!=0){
