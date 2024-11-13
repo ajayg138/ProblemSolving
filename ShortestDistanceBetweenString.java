@@ -1,5 +1,5 @@
     public class ShortestDistanceBetweenString{
-//ShortestDistanceBetweenString
+//ShortestDistanceBetweenString...O(n)...
         public static int ShortestDist(String[] s,String word1, String word2){
             int ans=Integer.MAX_VALUE;
 
