@@ -1,9 +1,10 @@
 public class ShortestDistanceBetweenString{
 
-    public static int ShortestDist(String[] s, String word1, String word2){
-        int index1=-1, index2=-1;
+    public static int ShortestDist(String[] s,String word1, String word2){
+        int ans=Integer.MAX_VALUE;
 
-        int min = Integer.MAX_VALUE;
+        int index1=-1;
+        int index2=-1;
 
         for(int i=0;i<s.length;i++){
             if(s[i].equals(word1)){
@@ -14,12 +15,13 @@ public class ShortestDistanceBetweenString{
                 index2=i;
             }
 
-            if(index1 != -1 && index2 != -1){
-                min=Math.min(min,Math.abs(index1-index2));
+            if(index1!=-1 && index2!=-1){
+                ans=Math.min(ans,Math.abs(index1-index2));
             }
         }
 
-        return min;
+
+        return ans;
     }
 
 
