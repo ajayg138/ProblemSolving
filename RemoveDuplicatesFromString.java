@@ -3,23 +3,23 @@ import java.util.*;
 public class RemoveDuplicatesFromString{
 
 
-//Brute force Approach...O(n)
-    public static String RemoveDup(String str){
+// //Brute force Approach...O(n)
+//     public static String RemoveDup(String str){
 
-        StringBuilder sb=new StringBuilder();
-        boolean[] seen=new boolean[256];
+//         StringBuilder sb=new StringBuilder();
+//         boolean[] seen=new boolean[256];
 
-        for(int i=0;i<str.length();i++){
-            char c=str.charAt(i);
+//         for(int i=0;i<str.length();i++){
+//             char c=str.charAt(i);
             
-            if(!seen[c]){
-                sb.append(c);
-                seen[c]=true;   
-            }
-        }
+//             if(!seen[c]){
+//                 sb.append(c);
+//                 seen[c]=true;   
+//             }
+//         }
 
-        return sb.toString();
-    }
+//         return sb.toString();
+//     }
 
 
     public static void main(String[] args){
