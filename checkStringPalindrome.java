@@ -1,4 +1,5 @@
 public class checkStringPalindrome{
+    //check String Palindrome...
 
     public static void checkPalindrome(String str){
         String ogStr = str;
