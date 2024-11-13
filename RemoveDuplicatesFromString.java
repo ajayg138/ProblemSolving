@@ -24,24 +24,40 @@ public class RemoveDuplicatesFromString{
 
 
 //using HashSet...O(n)...
+// public static String RemoveDup(String str){
+
+//     HashSet<Character> hs=new HashSet<>();
+
+//     StringBuilder sb=new StringBuilder();
+
+//     for(int i=0;i<str.length();i++){
+//         if(hs.add(str.charAt(i))){
+//             sb.append(str.charAt(i));
+//         }
+//     }
+
+//     return sb.toString();
+// }
+
+
+//using indexOf() method
+
 public static String RemoveDup(String str){
-
-    HashSet<Character> hs=new HashSet<>();
-
-    StringBuilder sb=new StringBuilder();
+    String res="";
+    // StringBuilder sb=new StringBuilder();
 
     for(int i=0;i<str.length();i++){
-        if(hs.add(str.charAt(i))){
-            sb.append(str.charAt(i));
+        if(res.indexOf(str.charAt(i)) == -1){
+            res = res + str.charAt(i);
         }
     }
 
-    return sb.toString();
+    return res;
 }
 
 
     public static void main(String[] args){
-        String str="aabbccccc";
+        String str="aaaaxxbbccccc";
 
         String res=RemoveDup(str);
         System.out.println(res);
