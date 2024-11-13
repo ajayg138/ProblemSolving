@@ -1,5 +1,5 @@
 class AvgMaxSubArray {
-    //find maxsubarray...
+    //find maxsubarray...O(n)
     public double findMaxAverage(int[] nums, int k) {
         
         int maxSum = 0;
