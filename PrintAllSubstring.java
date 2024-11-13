@@ -1,6 +1,6 @@
 public class PrintAllSubstring{
 
-//Print all Substring...
+//Print all Substring...O(n)
     public static void main(String[] args){
         String str="abc";
         printSubstring(str);
