@@ -1,6 +1,6 @@
 public class PrintAllSubstring{
 
-
+//Print all Substring...
     public static void main(String[] args){
         String str="abc";
         printSubstring(str);
