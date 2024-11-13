@@ -40,7 +40,7 @@ public class RemoveDuplicatesFromString{
 // }
 
 
-//using indexOf() method
+//using indexOf() method...O(n^2)
 
 public static String RemoveDup(String str){
     String res="";
