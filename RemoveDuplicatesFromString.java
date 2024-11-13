@@ -3,7 +3,7 @@ import java.util.*;
 public class RemoveDuplicatesFromString{
 
 
-//Brute force Approach
+//Brute force Approach...O(n)
     public static String RemoveDup(String str){
 
         StringBuilder sb=new StringBuilder();
