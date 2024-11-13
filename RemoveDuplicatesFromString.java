@@ -3,7 +3,7 @@ import java.util.*;
 public class RemoveDuplicatesFromString{
 
 
-// //Brute force Approach...O(n)
+// //Brute force Approach...O(n^2)
 //     public static String RemoveDup(String str){
 
 //         StringBuilder sb=new StringBuilder();
@@ -22,6 +22,8 @@ public class RemoveDuplicatesFromString{
 //     }
 
 
+
+//using HashSet...O(n)...
 public static String RemoveDup(String str){
 
     HashSet<Character> hs=new HashSet<>();
