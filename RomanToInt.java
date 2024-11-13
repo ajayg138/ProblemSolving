@@ -1,7 +1,7 @@
 import java.util.*;
 public class RomanToInt{
 
-//Brute Force Approach....
+//Brute Force Approach....O(n)
 
     // public static int values(char r){
     //     if(r=='I')
