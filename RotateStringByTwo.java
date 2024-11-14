@@ -1,5 +1,7 @@
 public class RotateStringByTwo{
 
+
+//Naive Approach...O(n)
     public static boolean isRotated(String str1,String str2){
         if(str1.length() != str2.length()){
             return false;
