@@ -52,7 +52,7 @@ public class PrintDupCharInString{
 
 
 
-//Optimal Solution using HashMap..
+//Optimal Solution using HashMap..O(N)
 
     public static void printDupChar(String str){
         HashMap<Character, Integer> hm=new HashMap<>();
