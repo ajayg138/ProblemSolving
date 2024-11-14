@@ -54,25 +54,44 @@ public class PrintDupCharInString{
 
 //Optimal Solution using HashMap..O(N)
 
-    public static void printDupChar(String str){
-        HashMap<Character, Integer> hm=new HashMap<>();
+    // public static void printDupChar(String str){
+    //     HashMap<Character, Integer> hm=new HashMap<>();
 
-        for(int i=0;i<str.length();i++){
-            if(hm.containsKey(str.charAt(i))){
-                hm.put(str.charAt(i), hm.get(str.charAt(i))+1);
-            }else{
-                hm.put(str.charAt(i),1);
-            }
-        }
+    //     for(int i=0;i<str.length();i++){
+    //         if(hm.containsKey(str.charAt(i))){
+    //             hm.put(str.charAt(i), hm.get(str.charAt(i))+1);
+    //         }else{
+    //             hm.put(str.charAt(i),1);
+    //         }
+    //     }
 
-        for(Map.Entry<Character,Integer> mapElement : hm.entrySet()){
-            if(mapElement.getValue()>1){
-                System.out.println(mapElement.getKey()+": count = "+mapElement.getValue());
+    //     for(Map.Entry<Character,Integer> mapElement : hm.entrySet()){
+    //         if(mapElement.getValue()>1){
+    //             System.out.println(mapElement.getKey()+": count = "+mapElement.getValue());
 
-            }
+    //         }
+    //     }
+    // }
+
+
+public static void printDupChar(String str){
+    HashMap<Character, Integer> hm=new HashMap<>();
+
+    for(int i=0;i<str.length();i++){
+        if(hm.containsKey(str.charAt(i))){
+            hm.put(str.charAt(i), hm.get(str.charAt(i))+1);
+        }else{
+            hm.put(str.charAt(i),1);
         }
     }
 
+
+    for(Map.Entry<Character,Integer> mapElement : hm.entrySet()){
+        if(mapElement.getValue()>1){
+            System.out.println(mapElement.getKey()+" : Count = "+mapElement.getValue());
+        }
+    }
+}
 
     public static void main(String[] args){
         // String str="geeksforgeeks";
