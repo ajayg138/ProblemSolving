@@ -36,6 +36,35 @@ public class checkvalidParenthesis{
     // }
 
 
+    public static boolean isValid(String str){
+        Stack<Character> st=new Stack<>();
 
-    
+
+        for(int i=0;i<str.length();i++){
+            char ch=str.charAt(i);
+            if(ch=='(' || ch=='{' || ch=='['){
+                st.push(ch);
+            }else{
+                if(st.isEmpty() || !isMatching(st.pop(),ch)){
+                    return false;
+                }
+            }
+        }
+
+        return st.isEmpty();
+    }
+
+    public static boolean isMatching(char open,char close){
+        return (open=='(' && close==')') || (open=='{' && close=='}') || (open=='[' && close==']');
+    }
+
+
+    public static void main(String[] args){
+        // String str="{}[]({)";
+        String str="{}[]({})";
+
+        System.out.println(isValid(str));
+
+    }
+
 }
