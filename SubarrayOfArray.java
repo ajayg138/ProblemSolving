@@ -32,6 +32,21 @@ public class SubarrayOfArray{
     //     return new int[]{-1};
     // }
 
+public static int[] SubArray(int[] arr,int target){
+    int n=arr.length;
+    int sum=0;
+
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            sum += arr[j];
+            if(sum==target){
+                return new int[]{i,j};
+            }
+        }
+    }
+
+    return new int[]{-1};
+}
 
     
     public static void main(String[] args){
