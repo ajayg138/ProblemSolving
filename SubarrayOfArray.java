@@ -1,4 +1,6 @@
 public class SubarrayOfArray{
+
+    //brute force appraoch...
     public static int[] SubArray(int[] arr,int target){
         int n=arr.length;
 
