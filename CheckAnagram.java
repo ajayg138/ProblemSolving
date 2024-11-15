@@ -20,7 +20,7 @@ public class CheckAnagram{
 
 // Output: false
 
-//O(nlogn)...
+//O(nlogn)...sorting takes nlogn complexity
 
     public static boolean validateAnagram(String str1, String str2){
         if(str1.length() != str2.length()){
