@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class MinNMaxEleInArray{
 
     //First BRute Force...
@@ -20,6 +22,16 @@ public class MinNMaxEleInArray{
 
     // }
 
+//Second Brute Force..O(NlogN)...
+
+public static void MinMax(int[] arr){
+    Arrays.sort(arr);
+
+    System.out.println(arr[0]);
+    System.out.println(arr[arr.length-1]);
+
+
+}
 
     public static void main(String[] args){
         int[] arr={3, 5, 4, 1, 9};
