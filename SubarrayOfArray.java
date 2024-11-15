@@ -1,6 +1,22 @@
 public class SubarrayOfArray{
 
     //brute force appraoch....
+    // public static int[] SubArray(int[] arr,int target){
+    //     int n=arr.length;
+
+    //     for(int start=0;start<n;start++){
+    //         int sum=0;
+    //         for(int end=start;end<n;end++){
+    //             sum += arr[end];
+    //             if(sum==target){
+    //                 return new int[]{start,end};
+    //             }
+    //         }
+    //     }
+
+    //     return new int[]{-1};
+
+
     public static int[] SubArray(int[] arr,int target){
         int n=arr.length;
 
@@ -13,11 +29,11 @@ public class SubarrayOfArray{
                 }
             }
         }
-
         return new int[]{-1};
-
-
     }
+
+
+    
     public static void main(String[] args){
         int[] arr={1, 2, 3, 7, 5};
         int target=12;
