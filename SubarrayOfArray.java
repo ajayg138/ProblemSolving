@@ -17,20 +17,20 @@ public class SubarrayOfArray{
     //     return new int[]{-1};
 
 
-    public static int[] SubArray(int[] arr,int target){
-        int n=arr.length;
+    // public static int[] SubArray(int[] arr,int target){
+    //     int n=arr.length;
 
-        for(int start=0;start<n;start++){
-            int sum=0;
-            for(int end=start;end<n;end++){
-                sum += arr[end];
-                if(sum==target){
-                    return new int[]{start,end};
-                }
-            }
-        }
-        return new int[]{-1};
-    }
+    //     for(int start=0;start<n;start++){
+    //         int sum=0;
+    //         for(int end=start;end<n;end++){
+    //             sum += arr[end];
+    //             if(sum==target){
+    //                 return new int[]{start,end};
+    //             }
+    //         }
+    //     }
+    //     return new int[]{-1};
+    // }
 
 
     
